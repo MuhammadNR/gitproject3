@@ -11,3 +11,31 @@ a{
     justify-content: center;
     align-items: center;
 }
+
+a{
+    display: flex;
+    column-gap: 30px;
+    align-items: center;
+}
+
+a::before{
+    content: "In";
+    display: flex;
+    width: 100px;
+    height: 3px;
+    background: red;
+}
+
+a::after{
+    content: "On";
+    display: inline-block;
+    width: 100px;
+    height: 3px;
+    background: rebeccapurple;
+
+}
+
+p::after{
+    content: "New Element";
+    background: yellow;
+}
